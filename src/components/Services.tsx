@@ -15,6 +15,9 @@ const ServicesSection: React.FC = () => {
                 src={service.icon}
                 alt={`${service.title} Icon`}
                 className="mx-auto h-16 w-16 mb-4"
+                
+                width={32}
+                height = {32}
               />
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
               <p className="text-gray-600 mb-4">{service.description}</p>

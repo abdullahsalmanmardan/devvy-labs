@@ -9,8 +9,10 @@ const Navbar: React.FC = () => {
         >
           <Image
             src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8"
             alt="Flowbite Logo"
+            width={32}
+            height={32}
+            className="h-8"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             Flowbite
@@ -33,9 +35,9 @@ const Navbar: React.FC = () => {
           >
             <path
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M1 1h15M1 7h15M1 13h15"
             />
           </svg>

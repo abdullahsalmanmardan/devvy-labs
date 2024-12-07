@@ -14,6 +14,13 @@ interface CaseStudy {
   end_date: string; // e.g., "2024-03-31"
 }
 
+export interface Testimonial {
+  quote: string;
+  clientName: string;
+  projectName: string;
+  rating: number;
+}
+
 export const services: Service[] = [
   {
     title: "Custom Web Development",
@@ -105,5 +112,75 @@ export const caseStudies: CaseStudy[] = [
     duration: "2 months",
     start_date: "2023-10-01",
     end_date: "2023-11-30",
+  },
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    quote:
+      "This is a fantastic service. The team delivered beyond expectations!",
+    clientName: "John Doe",
+    projectName: "E-Commerce Platform",
+    rating: 5,
+  },
+  {
+    quote: "Very satisfied with the outcome. Highly recommend!",
+    clientName: "Jane Smith",
+    projectName: "Mobile App Development",
+    rating: 4,
+  },
+  {
+    quote:
+      "The software solution was tailored perfectly to our needs. Excellent work!",
+    clientName: "Michael Johnson",
+    projectName: "CRM System Integration",
+    rating: 5,
+  },
+  {
+    quote:
+      "Great experience. The team was professional and efficient throughout the project.",
+    clientName: "Sarah Williams",
+    projectName: "AI Chatbot Development",
+    rating: 4,
+  },
+  {
+    quote: "A seamless process from start to finish. We saw great results!",
+    clientName: "David Brown",
+    projectName: "Custom ERP Solution",
+    rating: 5,
+  },
+  {
+    quote:
+      "The team was responsive and quick to adapt to our changing requirements.",
+    clientName: "Linda Martinez",
+    projectName: "Cloud-based Data Management",
+    rating: 4,
+  },
+  {
+    quote: "Impressive turnaround time and exceptional attention to detail!",
+    clientName: "James Lee",
+    projectName: "Website Redesign",
+    rating: 5,
+  },
+  {
+    quote:
+      "We are extremely happy with the product delivered. Highly recommended!",
+    clientName: "Emily Clark",
+    projectName: "E-Commerce Platform Redesign",
+    rating: 5,
+  },
+  {
+    quote:
+      "Professional, knowledgeable, and easy to work with. Thank you for the great work!",
+    clientName: "Robert Hall",
+    projectName: "Business Analytics Tool",
+    rating: 4,
+  },
+  {
+    quote:
+      "A very positive experience overall. The software really helped streamline our operations.",
+    clientName: "Patricia Young",
+    projectName: "Inventory Management System",
+    rating: 5,
   },
 ];

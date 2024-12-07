@@ -1,3 +1,4 @@
+"use client";
 import { caseStudies } from "../../data/data";
 import Image from "next/image";
 import { useState } from "react";
@@ -49,6 +50,8 @@ const Portfolio: React.FC = () => {
                   src={study.image}
                   alt={study.title}
                   className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  width={32}
+                  height = {32}
                 />
               </div>
             ))}
@@ -88,9 +91,9 @@ const Portfolio: React.FC = () => {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M5 1 1 5l4 4"
                 />
               </svg>
@@ -114,9 +117,9 @@ const Portfolio: React.FC = () => {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="m1 9 4-4-4-4"
                 />
               </svg>
