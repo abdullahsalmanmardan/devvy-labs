@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,6 +31,10 @@ export default function RootLayout({
       >
         {children}
       </body>
+      <Script
+        src="/path/to/flowbite/dist/flowbite.min.js" // Adjust the path as needed
+        strategy="beforeInteractive" // Load it before other scripts if required
+      />
     </html>
   );
 }
